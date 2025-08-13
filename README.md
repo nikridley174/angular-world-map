@@ -4,4 +4,11 @@
 Welcome to JavaScript Programming! 
 For specific task instructions and requirements for this assessment, please refer to the course page.
  
+ 
+Student ID: 012329800
 
+Angular CLI: 20.1.5
+Node: 22.17.0
+Package Manager: npm 11.4.2
+OS: win32 x64
+Angular: 20.1.6
