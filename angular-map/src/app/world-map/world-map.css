@@ -1,0 +1,54 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap:16px;min-height: 360px
+}
+
+.col {
+    padding: 12px;
+    overflow: auto
+}
+
+.panel {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    background: #fff
+}
+
+.map .svg-host svg {
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+.country {
+    cursor: pointer;
+    transition: filter 0.08s ease, transform 0.08s ease, fill 0.08ms ease;
+}
+
+.country:hover {
+    fill: red;
+    transform: scale(1.02);
+    filter: brightness(0.9)
+}
+
+.muted {
+    color: #666
+}
+
+.error {
+    color: #b00020
+}
+
+.loading {
+    opacity: .8
+}
+
+dt {
+    font-weight: 600
+}
+
+dd {
+    margin: 0 0 8px 0
+}

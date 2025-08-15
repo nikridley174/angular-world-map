@@ -1,0 +1,27 @@
+<div class="layout">
+  <div class="col">
+    <div class="panel map" (click)="onMapClick($event)">
+      <div class="svg-host" [innerHTML]="svg()"></div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="panel">
+      <p class="muted" *ngIf="!country() && !error() && !loading()"><b>Click a country to load details.</b></p>
+      <p class="error" *ngIf="error()">{{ error() }}</p>
+      <div class="loading" *ngIf="loading()">Loading…</div>
+
+      <div *ngIf="country() as c">
+        <h2>{{ c.name }} ({{ c.iso2Code }})</h2>
+        <dl>
+          <dt>Country Name</dt><dd>{{ c.name || '—' }}</dd>
+          <dt>Capital</dt><dd>{{ c.capitalCity || '—' }}</dd>
+          <dt>Region</dt><dd>{{ c.region.value || '—' }}</dd>
+          <dt>Income level</dt><dd>{{ c.incomeLevel.value || '—' }}</dd>
+          <dt>Latitude</dt><dd>{{ c.latitude || '—' }}</dd>
+          <dt>Longitude</dt><dd>{{ c.longitude || '—' }}</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
