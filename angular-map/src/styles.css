@@ -1,0 +1,7 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+app-world-map .svg-host svg path:hover {
+    fill: red !important;
+    cursor: pointer;
+    transition: fill 120ms ease;
+}
